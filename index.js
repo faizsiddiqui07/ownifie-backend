@@ -32,6 +32,7 @@ db_connect()
 
 app.use('/', require('./routes/authRoutes'))
 app.use('/', require('./routes/projectRoutes'))
+app.use('/', require('./routes/contactQueryRoutes'))
 
 
 app.listen(port, () => console.log(`Server running on port ${port}!`))
