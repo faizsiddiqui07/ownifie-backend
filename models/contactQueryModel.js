@@ -27,7 +27,6 @@ const contactQuerySchema = new mongoose.Schema({
     projectId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'project',
-        required: true,
     }
 }, {
     timestamps: true

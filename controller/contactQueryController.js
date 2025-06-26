@@ -6,11 +6,11 @@ const contactQueryController = async (req, res) => {
         const { fullName, email, phoneNumber, message, projectId } = req.body;
 
         // Basic validation
-        if (!fullName || !email || !phoneNumber || !message || !projectId) {
+        if (!fullName || !email || !phoneNumber || !message) {
             return res.status(400).json({
                 success: false,
                 error: true,
-                message: "All fields including projectId are required.",
+                message: "All fields are required.",
             });
         }
 
