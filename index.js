@@ -17,7 +17,7 @@ if (process.env.mode === 'production') {
     app.use(cors())
 } else {
     app.use(cors({
-        origin: ["http://localhost:5174", "http://localhost:5173","https://ownifie.netlify.app"],
+        origin: ["http://localhost:5174", "http://localhost:5173","https://ownifie.netlify.app","https://adminownifie.netlify.app"],
         credentials: true,
     }))
 }
